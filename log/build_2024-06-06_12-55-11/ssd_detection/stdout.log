@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing ssd_detection.egg-info/PKG-INFO
+writing dependency_links to ssd_detection.egg-info/dependency_links.txt
+writing entry points to ssd_detection.egg-info/entry_points.txt
+writing requirements to ssd_detection.egg-info/requires.txt
+writing top-level names to ssd_detection.egg-info/top_level.txt
+reading manifest file 'ssd_detection.egg-info/SOURCES.txt'
+writing manifest file 'ssd_detection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection.egg-link (link to .)
+Installing detection_system script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+
+Installed /home/kimjunsuk/ros2_ws/build/ssd_detection
+running install_data
+copying resource/ssd_detection -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ssd_detection

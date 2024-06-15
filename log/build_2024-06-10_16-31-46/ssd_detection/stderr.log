@@ -1,0 +1,5 @@
+  File "/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/gui_display_node.py", line 60
+    warning_label = QtWidgets.QLabel(Need to Change')
+                                          ^
+SyntaxError: invalid syntax
+

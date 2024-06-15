@@ -1,0 +1,56 @@
+/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+!!
+
+        ********************************************************************************
+        Usage of dash-separated 'script-dir' will not be supported in future
+        versions. Please use the underscore name 'script_dir' instead.
+
+        By 2024-Sep-26, you need to update your project and remove deprecated calls
+        or your builds will no longer be supported.
+
+        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+        ********************************************************************************
+
+!!
+  opt = self.warn_dash_deprecation(opt, section)
+running egg_info
+writing ../../build/ssd_detection/ssd_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/ssd_detection/ssd_detection.egg-info/dependency_links.txt
+writing entry points to ../../build/ssd_detection/ssd_detection.egg-info/entry_points.txt
+writing requirements to ../../build/ssd_detection/ssd_detection.egg-info/requires.txt
+writing top-level names to ../../build/ssd_detection/ssd_detection.egg-info/top_level.txt
+reading manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ssd_detection/video_publisher.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+copying ssd_detection/__init__.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+copying ssd_detection/ssd_detection.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+copying ssd_detection/misc.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+running install
+/usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+running install_lib
+copying /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection/ssd_detection.py -> /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection
+byte-compiling /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/ssd_detection.py to ssd_detection.cpython-38.pyc
+running install_data
+copying resource/ssd_detection -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ssd_detection
+running install_egg_info
+removing '/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/ssd_detection/ssd_detection.egg-info to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info
+running install_scripts
+Installing detection_example script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+Installing video_publisher script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+writing list of installed files to '/home/kimjunsuk/ros2_ws/build/ssd_detection/install.log'

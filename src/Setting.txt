@@ -1,0 +1,6 @@
+1. 단축키 설정
+gedit ~/.bashrc
+아래 내용 추가
+alias sss='source /opt/ros/foxy/setup.bash && colcon build && source install/local_setup.bash'
+alias dotdetect='ros2 launch ssd_detection ssd_detection_launch.py'
+

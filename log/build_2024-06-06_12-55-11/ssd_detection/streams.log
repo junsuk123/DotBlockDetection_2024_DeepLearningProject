@@ -1,0 +1,60 @@
+[1.963s] Invoking command in '/home/kimjunsuk/ros2_ws/build/ssd_detection': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/kimjunsuk/ros2_ws/build/ssd_detection/build --no-deps install_data
+[2.095s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[2.095s] !!
+[2.095s] 
+[2.096s]         ********************************************************************************
+[2.096s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.096s]         versions. Please use the underscore name 'script_dir' instead.
+[2.096s] 
+[2.096s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[2.096s]         or your builds will no longer be supported.
+[2.096s] 
+[2.096s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.096s]         ********************************************************************************
+[2.096s] 
+[2.096s] !!
+[2.096s]   opt = self.warn_dash_deprecation(opt, section)
+[2.307s] running develop
+[2.314s] /usr/local/lib/python3.8/dist-packages/setuptools/command/develop.py:39: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[2.314s] !!
+[2.314s] 
+[2.314s]         ********************************************************************************
+[2.314s]         Please avoid running ``setup.py`` and ``easy_install``.
+[2.314s]         Instead, use pypa/build, pypa/installer or other
+[2.314s]         standards-based tools.
+[2.314s] 
+[2.314s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[2.314s]         ********************************************************************************
+[2.314s] 
+[2.314s] !!
+[2.315s]   easy_install.initialize_options(self)
+[2.349s] /usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[2.349s] !!
+[2.349s] 
+[2.349s]         ********************************************************************************
+[2.349s]         Please avoid running ``setup.py`` directly.
+[2.349s]         Instead, use pypa/build, pypa/installer or other
+[2.349s]         standards-based tools.
+[2.349s] 
+[2.349s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[2.349s]         ********************************************************************************
+[2.349s] 
+[2.349s] !!
+[2.349s]   self.initialize_options()
+[2.540s] running egg_info
+[2.559s] writing ssd_detection.egg-info/PKG-INFO
+[2.559s] writing dependency_links to ssd_detection.egg-info/dependency_links.txt
+[2.559s] writing entry points to ssd_detection.egg-info/entry_points.txt
+[2.560s] writing requirements to ssd_detection.egg-info/requires.txt
+[2.560s] writing top-level names to ssd_detection.egg-info/top_level.txt
+[2.595s] reading manifest file 'ssd_detection.egg-info/SOURCES.txt'
+[2.596s] writing manifest file 'ssd_detection.egg-info/SOURCES.txt'
+[2.652s] running build_ext
+[2.652s] Creating /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection.egg-link (link to .)
+[2.653s] Installing detection_system script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+[2.653s] 
+[2.653s] Installed /home/kimjunsuk/ros2_ws/build/ssd_detection
+[2.653s] running install_data
+[2.653s] copying resource/ssd_detection -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ament_index/resource_index/packages
+[2.653s] copying package.xml -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ssd_detection
+[2.687s] Invoked command in '/home/kimjunsuk/ros2_ws/build/ssd_detection' returned '0': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/kimjunsuk/ros2_ws/build/ssd_detection/build --no-deps install_data

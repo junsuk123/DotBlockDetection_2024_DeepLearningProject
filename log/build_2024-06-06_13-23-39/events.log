@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000353] (ssd_detection) JobQueued: {'identifier': 'ssd_detection', 'dependencies': OrderedDict()}
+[0.000919] (topic_helloworld) JobQueued: {'identifier': 'topic_helloworld', 'dependencies': OrderedDict()}
+[0.001033] (ssd_detection) JobStarted: {'identifier': 'ssd_detection'}
+[0.100972] (-) TimerEvent: {}
+[0.201462] (-) TimerEvent: {}
+[0.303320] (-) TimerEvent: {}
+[0.405618] (-) TimerEvent: {}
+[0.506340] (-) TimerEvent: {}
+[0.608100] (-) TimerEvent: {}
+[0.659854] (topic_helloworld) JobStarted: {'identifier': 'topic_helloworld'}
+[0.710404] (-) TimerEvent: {}
+[0.812013] (-) TimerEvent: {}
+[0.913117] (-) TimerEvent: {}
+[1.013467] (-) TimerEvent: {}
+[1.113798] (-) TimerEvent: {}
+[1.214820] (-) TimerEvent: {}
+[1.318475] (-) TimerEvent: {}
+[1.418811] (-) TimerEvent: {}
+[1.519342] (-) TimerEvent: {}
+[1.619857] (-) TimerEvent: {}
+[1.720674] (-) TimerEvent: {}
+[1.821291] (-) TimerEvent: {}
+[1.922814] (-) TimerEvent: {}
+[2.024002] (-) TimerEvent: {}
+[2.124334] (-) TimerEvent: {}
+[2.224884] (-) TimerEvent: {}
+[2.326276] (-) TimerEvent: {}
+[2.427715] (-) TimerEvent: {}
+[2.531019] (-) TimerEvent: {}
+[2.632098] (-) TimerEvent: {}
+[2.735190] (-) TimerEvent: {}
+[2.835537] (-) TimerEvent: {}
+[2.935861] (-) TimerEvent: {}
+[3.036113] (-) TimerEvent: {}
+[3.136371] (-) TimerEvent: {}
+[3.236625] (-) TimerEvent: {}
+[3.336905] (-) TimerEvent: {}
+[3.371044] (ssd_detection) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/ssd_detection', 'build', '--build-base', '/home/kimjunsuk/ros2_ws/build/ssd_detection/build', 'install', '--record', '/home/kimjunsuk/ros2_ws/build/ssd_detection/install.log', '--install-scripts', '$base/lib/ssd_detection', '--single-version-externally-managed'], 'cwd': '/home/kimjunsuk/ros2_ws/src/ssd_detection', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'en_US:en', 'USER': 'kimjunsuk', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1322', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kimjunsuk', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '905', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '77445', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kimjunsuk/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kimjunsuk', 'JOURNAL_STREAM': '8:40209', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kimjunsuk', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kimjunsuk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kimjunsuk-950XCJ-951XCJ-950XCR:@/tmp/.ICE-unix/1352,unix/kimjunsuk-950XCJ-951XCJ-950XCR:/tmp/.ICE-unix/1352', 'INVOCATION_ID': '6be6f5a59a0a4b84b9b55f187ffc9295', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kimjunsuk/ros2_ws/install/topic_helloworld:/home/kimjunsuk/ros2_ws/install/ssd_detection:/opt/ros/foxy', 'LC_MESSAGES': 'POSIX', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:42de4782-2fb7-40c0-b8ab-002f9acf5b47', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kimjunsuk/ros2_ws/build/ssd_detection', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[3.380898] (topic_helloworld) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/topic_helloworld', 'build', '--build-base', '/home/kimjunsuk/ros2_ws/build/topic_helloworld/build', 'install', '--record', '/home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log', '--install-scripts', '$base/lib/topic_helloworld', '--single-version-externally-managed'], 'cwd': '/home/kimjunsuk/ros2_ws/src/topic_helloworld', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LANGUAGE': 'en_US:en', 'USER': 'kimjunsuk', 'LC_TIME': 'ko_KR.UTF-8', 'SSH_AGENT_PID': '1322', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/kimjunsuk', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'MANAGERPID': '905', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '77445', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/kimjunsuk/ros2_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'kimjunsuk', 'JOURNAL_STREAM': '8:40209', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'kimjunsuk', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/foxy/bin:/home/kimjunsuk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/kimjunsuk-950XCJ-951XCJ-950XCR:@/tmp/.ICE-unix/1352,unix/kimjunsuk-950XCJ-951XCJ-950XCR:/tmp/.ICE-unix/1352', 'INVOCATION_ID': '6be6f5a59a0a4b84b9b55f187ffc9295', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/kimjunsuk/ros2_ws/install/topic_helloworld:/home/kimjunsuk/ros2_ws/install/ssd_detection:/opt/ros/foxy', 'LC_MESSAGES': 'POSIX', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:42de4782-2fb7-40c0-b8ab-002f9acf5b47', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/kimjunsuk/ros2_ws/build/topic_helloworld', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/kimjunsuk/ros2_ws/build/topic_helloworld/prefix_override:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003'}, 'shell': False}
+[3.437039] (-) TimerEvent: {}
+[3.501405] (ssd_detection) StderrLine: {'line': b'/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options\n'}
+[3.501583] (ssd_detection) StderrLine: {'line': b'!!\n'}
+[3.501656] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.501717] (ssd_detection) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.501778] (ssd_detection) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[3.501834] (ssd_detection) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[3.501892] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.501947] (ssd_detection) StderrLine: {'line': b'        By 2024-Sep-26, you need to update your project and remove deprecated calls\n'}
+[3.502004] (ssd_detection) StderrLine: {'line': b'        or your builds will no longer be supported.\n'}
+[3.502061] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.502118] (ssd_detection) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[3.502174] (ssd_detection) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.502230] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.502286] (ssd_detection) StderrLine: {'line': b'!!\n'}
+[3.502341] (ssd_detection) StderrLine: {'line': b'  opt = self.warn_dash_deprecation(opt, section)\n'}
+[3.508498] (topic_helloworld) StderrLine: {'line': b'/usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options\n'}
+[3.508636] (topic_helloworld) StderrLine: {'line': b'!!\n'}
+[3.508704] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.508766] (topic_helloworld) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.508825] (topic_helloworld) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[3.508882] (topic_helloworld) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[3.508939] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.508994] (topic_helloworld) StderrLine: {'line': b'        By 2024-Sep-26, you need to update your project and remove deprecated calls\n'}
+[3.509051] (topic_helloworld) StderrLine: {'line': b'        or your builds will no longer be supported.\n'}
+[3.509107] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.509162] (topic_helloworld) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[3.509219] (topic_helloworld) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.509276] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.509332] (topic_helloworld) StderrLine: {'line': b'!!\n'}
+[3.509388] (topic_helloworld) StderrLine: {'line': b'  opt = self.warn_dash_deprecation(opt, section)\n'}
+[3.537146] (-) TimerEvent: {}
+[3.606351] (ssd_detection) StdoutLine: {'line': b'running egg_info\n'}
+[3.616227] (topic_helloworld) StdoutLine: {'line': b'running egg_info\n'}
+[3.637263] (-) TimerEvent: {}
+[3.725127] (ssd_detection) StdoutLine: {'line': b'writing ../../build/ssd_detection/ssd_detection.egg-info/PKG-INFO\n'}
+[3.725564] (ssd_detection) StdoutLine: {'line': b'writing dependency_links to ../../build/ssd_detection/ssd_detection.egg-info/dependency_links.txt\n'}
+[3.725806] (ssd_detection) StdoutLine: {'line': b'writing entry points to ../../build/ssd_detection/ssd_detection.egg-info/entry_points.txt\n'}
+[3.725988] (ssd_detection) StdoutLine: {'line': b'writing requirements to ../../build/ssd_detection/ssd_detection.egg-info/requires.txt\n'}
+[3.726162] (ssd_detection) StdoutLine: {'line': b'writing top-level names to ../../build/ssd_detection/ssd_detection.egg-info/top_level.txt\n'}
+[3.737382] (-) TimerEvent: {}
+[3.738275] (topic_helloworld) StdoutLine: {'line': b'writing ../../build/topic_helloworld/topic_helloworld.egg-info/PKG-INFO\n'}
+[3.738686] (topic_helloworld) StdoutLine: {'line': b'writing dependency_links to ../../build/topic_helloworld/topic_helloworld.egg-info/dependency_links.txt\n'}
+[3.738970] (topic_helloworld) StdoutLine: {'line': b'writing requirements to ../../build/topic_helloworld/topic_helloworld.egg-info/requires.txt\n'}
+[3.739093] (topic_helloworld) StdoutLine: {'line': b'writing top-level names to ../../build/topic_helloworld/topic_helloworld.egg-info/top_level.txt\n'}
+[3.760183] (ssd_detection) StdoutLine: {'line': b"reading manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'\n"}
+[3.761054] (ssd_detection) StdoutLine: {'line': b"writing manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'\n"}
+[3.761250] (ssd_detection) StdoutLine: {'line': b'running build\n'}
+[3.761343] (ssd_detection) StdoutLine: {'line': b'running build_py\n'}
+[3.761484] (ssd_detection) StdoutLine: {'line': b'copying ssd_detection/video_publisher.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection\n'}
+[3.761657] (ssd_detection) StdoutLine: {'line': b'copying ssd_detection/__init__.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection\n'}
+[3.761755] (ssd_detection) StdoutLine: {'line': b'copying ssd_detection/ssd_detection.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection\n'}
+[3.761850] (ssd_detection) StdoutLine: {'line': b'copying ssd_detection/misc.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection\n'}
+[3.762072] (ssd_detection) StdoutLine: {'line': b'running install\n'}
+[3.762254] (ssd_detection) StderrLine: {'line': b'/usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[3.762350] (ssd_detection) StderrLine: {'line': b'!!\n'}
+[3.762415] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.762486] (ssd_detection) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.762551] (ssd_detection) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[3.762609] (ssd_detection) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[3.762666] (ssd_detection) StderrLine: {'line': b'        standards-based tools.\n'}
+[3.762723] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.762779] (ssd_detection) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[3.762836] (ssd_detection) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.762892] (ssd_detection) StderrLine: {'line': b'\n'}
+[3.762948] (ssd_detection) StderrLine: {'line': b'!!\n'}
+[3.763004] (ssd_detection) StderrLine: {'line': b'  self.initialize_options()\n'}
+[3.768035] (ssd_detection) StdoutLine: {'line': b'running install_lib\n'}
+[3.773999] (topic_helloworld) StdoutLine: {'line': b"reading manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'\n"}
+[3.774853] (topic_helloworld) StdoutLine: {'line': b"writing manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'\n"}
+[3.775009] (topic_helloworld) StdoutLine: {'line': b'running build\n'}
+[3.775135] (topic_helloworld) StdoutLine: {'line': b'running build_py\n'}
+[3.775236] (topic_helloworld) StdoutLine: {'line': b'copying topic_helloworld/__init__.py -> /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib/topic_helloworld\n'}
+[3.775336] (topic_helloworld) StdoutLine: {'line': b'running install\n'}
+[3.775554] (topic_helloworld) StderrLine: {'line': b'/usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[3.775633] (topic_helloworld) StderrLine: {'line': b'!!\n'}
+[3.775692] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.775751] (topic_helloworld) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.775809] (topic_helloworld) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[3.775866] (topic_helloworld) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[3.775923] (topic_helloworld) StderrLine: {'line': b'        standards-based tools.\n'}
+[3.775980] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.776037] (topic_helloworld) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[3.776093] (topic_helloworld) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.776148] (topic_helloworld) StderrLine: {'line': b'\n'}
+[3.776204] (topic_helloworld) StderrLine: {'line': b'!!\n'}
+[3.776259] (topic_helloworld) StderrLine: {'line': b'  self.initialize_options()\n'}
+[3.781232] (topic_helloworld) StdoutLine: {'line': b'running install_lib\n'}
+[3.785268] (ssd_detection) StdoutLine: {'line': b'running install_data\n'}
+[3.798590] (topic_helloworld) StdoutLine: {'line': b'running install_data\n'}
+[3.801612] (ssd_detection) StdoutLine: {'line': b'copying resource/ssd_detection -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ament_index/resource_index/packages\n'}
+[3.801756] (ssd_detection) StdoutLine: {'line': b'copying package.xml -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ssd_detection\n'}
+[3.801879] (ssd_detection) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.815212] (topic_helloworld) StdoutLine: {'line': b'copying resource/topic_helloworld -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index/resource_index/packages\n'}
+[3.815382] (topic_helloworld) StdoutLine: {'line': b'copying package.xml -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/topic_helloworld\n'}
+[3.815505] (topic_helloworld) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.818762] (ssd_detection) StdoutLine: {'line': b"removing '/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.818998] (ssd_detection) StdoutLine: {'line': b'Copying ../../build/ssd_detection/ssd_detection.egg-info to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info\n'}
+[3.819737] (ssd_detection) StdoutLine: {'line': b'running install_scripts\n'}
+[3.832803] (topic_helloworld) StdoutLine: {'line': b"removing '/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[3.832971] (topic_helloworld) StdoutLine: {'line': b'Copying ../../build/topic_helloworld/topic_helloworld.egg-info to /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info\n'}
+[3.833623] (topic_helloworld) StdoutLine: {'line': b'running install_scripts\n'}
+[3.837490] (-) TimerEvent: {}
+[3.868435] (ssd_detection) StdoutLine: {'line': b'Installing detection_example script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection\n'}
+[3.868614] (ssd_detection) StdoutLine: {'line': b'Installing video_publisher script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection\n'}
+[3.868937] (ssd_detection) StdoutLine: {'line': b"writing list of installed files to '/home/kimjunsuk/ros2_ws/build/ssd_detection/install.log'\n"}
+[3.884005] (topic_helloworld) StdoutLine: {'line': b"writing list of installed files to '/home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log'\n"}
+[3.896934] (ssd_detection) CommandEnded: {'returncode': 0}
+[3.937773] (-) TimerEvent: {}
+[4.038449] (-) TimerEvent: {}
+[4.138921] (-) TimerEvent: {}
+[4.239206] (-) TimerEvent: {}
+[4.287563] (ssd_detection) JobEnded: {'identifier': 'ssd_detection', 'rc': 0}
+[4.288747] (topic_helloworld) CommandEnded: {'returncode': 0}
+[4.339864] (-) TimerEvent: {}
+[4.442140] (-) TimerEvent: {}
+[4.544138] (-) TimerEvent: {}
+[4.644640] (-) TimerEvent: {}
+[4.674264] (topic_helloworld) JobEnded: {'identifier': 'topic_helloworld', 'rc': 0}
+[4.674965] (-) EventReactorShutdown: {}

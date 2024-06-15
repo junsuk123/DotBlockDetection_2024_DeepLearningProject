@@ -1,0 +1,20 @@
+[0.828s] Invoking command in '/home/kimjunsuk/ros2_ws/src/topic_helloworld': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/topic_helloworld/prefix_override:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/topic_helloworld build --build-base /home/kimjunsuk/ros2_ws/build/topic_helloworld/build install --record /home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log --install-scripts $base/lib/topic_helloworld --single-version-externally-managed install_data
+[0.969s] running egg_info
+[0.970s] writing ../../build/topic_helloworld/topic_helloworld.egg-info/PKG-INFO
+[0.970s] writing dependency_links to ../../build/topic_helloworld/topic_helloworld.egg-info/dependency_links.txt
+[0.971s] writing entry points to ../../build/topic_helloworld/topic_helloworld.egg-info/entry_points.txt
+[0.971s] writing requirements to ../../build/topic_helloworld/topic_helloworld.egg-info/requires.txt
+[0.971s] writing top-level names to ../../build/topic_helloworld/topic_helloworld.egg-info/top_level.txt
+[1.006s] reading manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+[1.008s] writing manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+[1.008s] running build
+[1.008s] running build_py
+[1.008s] running install
+[1.009s] running install_lib
+[1.010s] running install_data
+[1.010s] running install_egg_info
+[1.011s] removing '/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info' (and everything under it)
+[1.011s] Copying ../../build/topic_helloworld/topic_helloworld.egg-info to /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info
+[1.015s] running install_scripts
+[1.028s] writing list of installed files to '/home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log'
+[1.045s] Invoked command in '/home/kimjunsuk/ros2_ws/src/topic_helloworld' returned '0': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/topic_helloworld/prefix_override:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/topic_helloworld build --build-base /home/kimjunsuk/ros2_ws/build/topic_helloworld/build install --record /home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log --install-scripts $base/lib/topic_helloworld --single-version-externally-managed install_data

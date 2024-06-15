@@ -1,0 +1,50 @@
+[2.620s] Invoking command in '/home/kimjunsuk/ros2_ws/src/topic_helloworld': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/topic_helloworld/prefix_override:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/topic_helloworld build --build-base /home/kimjunsuk/ros2_ws/build/topic_helloworld/build install --record /home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log --install-scripts $base/lib/topic_helloworld --single-version-externally-managed
+[2.746s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[2.746s] !!
+[2.746s] 
+[2.746s]         ********************************************************************************
+[2.746s]         Usage of dash-separated 'script-dir' will not be supported in future
+[2.746s]         versions. Please use the underscore name 'script_dir' instead.
+[2.747s] 
+[2.747s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[2.747s]         or your builds will no longer be supported.
+[2.747s] 
+[2.747s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[2.747s]         ********************************************************************************
+[2.747s] 
+[2.747s] !!
+[2.748s]   opt = self.warn_dash_deprecation(opt, section)
+[2.852s] running egg_info
+[2.973s] writing ../../build/topic_helloworld/topic_helloworld.egg-info/PKG-INFO
+[2.973s] writing dependency_links to ../../build/topic_helloworld/topic_helloworld.egg-info/dependency_links.txt
+[2.974s] writing requirements to ../../build/topic_helloworld/topic_helloworld.egg-info/requires.txt
+[2.974s] writing top-level names to ../../build/topic_helloworld/topic_helloworld.egg-info/top_level.txt
+[3.009s] reading manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+[3.010s] writing manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+[3.010s] running build
+[3.011s] running build_py
+[3.011s] copying topic_helloworld/__init__.py -> /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib/topic_helloworld
+[3.011s] running install
+[3.011s] /usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[3.011s] !!
+[3.012s] 
+[3.012s]         ********************************************************************************
+[3.012s]         Please avoid running ``setup.py`` directly.
+[3.012s]         Instead, use pypa/build, pypa/installer or other
+[3.012s]         standards-based tools.
+[3.012s] 
+[3.012s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[3.012s]         ********************************************************************************
+[3.012s] 
+[3.013s] !!
+[3.013s]   self.initialize_options()
+[3.017s] running install_lib
+[3.034s] running install_data
+[3.051s] copying resource/topic_helloworld -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index/resource_index/packages
+[3.051s] copying package.xml -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/topic_helloworld
+[3.051s] running install_egg_info
+[3.069s] removing '/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info' (and everything under it)
+[3.069s] Copying ../../build/topic_helloworld/topic_helloworld.egg-info to /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info
+[3.070s] running install_scripts
+[3.119s] writing list of installed files to '/home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log'
+[3.536s] Invoked command in '/home/kimjunsuk/ros2_ws/src/topic_helloworld' returned '0': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/topic_helloworld/prefix_override:/home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/topic_helloworld build --build-base /home/kimjunsuk/ros2_ws/build/topic_helloworld/build install --record /home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log --install-scripts $base/lib/topic_helloworld --single-version-externally-managed

@@ -1,0 +1,30 @@
+running egg_info
+creating ../../build/topic_helloworld/topic_helloworld.egg-info
+writing ../../build/topic_helloworld/topic_helloworld.egg-info/PKG-INFO
+writing dependency_links to ../../build/topic_helloworld/topic_helloworld.egg-info/dependency_links.txt
+writing requirements to ../../build/topic_helloworld/topic_helloworld.egg-info/requires.txt
+writing top-level names to ../../build/topic_helloworld/topic_helloworld.egg-info/top_level.txt
+writing manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+reading manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+writing manifest file '../../build/topic_helloworld/topic_helloworld.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/kimjunsuk/ros2_ws/build/topic_helloworld/build
+creating /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib
+creating /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib/topic_helloworld
+copying topic_helloworld/__init__.py -> /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib/topic_helloworld
+running install
+running install_lib
+creating /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld
+copying /home/kimjunsuk/ros2_ws/build/topic_helloworld/build/lib/topic_helloworld/__init__.py -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld
+byte-compiling /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index
+creating /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index/resource_index
+creating /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index/resource_index/packages
+copying resource/topic_helloworld -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/ament_index/resource_index/packages
+copying package.xml -> /home/kimjunsuk/ros2_ws/install/topic_helloworld/share/topic_helloworld
+running install_egg_info
+Copying ../../build/topic_helloworld/topic_helloworld.egg-info to /home/kimjunsuk/ros2_ws/install/topic_helloworld/lib/python3.8/site-packages/topic_helloworld-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/kimjunsuk/ros2_ws/build/topic_helloworld/install.log'

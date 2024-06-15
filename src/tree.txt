@@ -1,0 +1,1507 @@
+kimjunsuk@LAPTOP-JUNSUK:~/ros2_ws$ tree
+.
+├── build
+│   ├── COLCON_IGNORE
+│   ├── COLCON_IGNORE:Zone.Identifier
+│   ├── ssd_detection
+│   │   ├── build
+│   │   │   └── lib
+│   │   │       └── ssd_detection
+│   │   │           ├── gui_display_node.py
+│   │   │           ├── __init__.py
+│   │   │           ├── __init__.py:Zone.Identifier
+│   │   │           ├── misc.py
+│   │   │           ├── misc.py:Zone.Identifier
+│   │   │           ├── ssd_detection.py
+│   │   │           ├── ssd_detection.py:Zone.Identifier
+│   │   │           ├── video_publisher.py
+│   │   │           └── video_publisher.py:Zone.Identifier
+│   │   ├── colcon_build.rc
+│   │   ├── colcon_build.rc:Zone.Identifier
+│   │   ├── colcon_command_prefix_setup_py.sh
+│   │   ├── colcon_command_prefix_setup_py.sh.env
+│   │   ├── colcon_command_prefix_setup_py.sh.env:Zone.Identifier
+│   │   ├── colcon_command_prefix_setup_py.sh:Zone.Identifier
+│   │   ├── install.log
+│   │   ├── install.log:Zone.Identifier
+│   │   ├── prefix_override
+│   │   │   ├── __pycache__
+│   │   │   │   ├── sitecustomize.cpython-38.pyc
+│   │   │   │   └── sitecustomize.cpython-38.pyc:Zone.Identifier
+│   │   │   ├── sitecustomize.py
+│   │   │   └── sitecustomize.py:Zone.Identifier
+│   │   ├── resource
+│   │   ├── share
+│   │   │   └── ssd_detection
+│   │   │       └── hook
+│   │   │           ├── pythonpath_develop.dsv
+│   │   │           ├── pythonpath_develop.dsv:Zone.Identifier
+│   │   │           ├── pythonpath_develop.ps1
+│   │   │           ├── pythonpath_develop.ps1:Zone.Identifier
+│   │   │           ├── pythonpath_develop.sh
+│   │   │           └── pythonpath_develop.sh:Zone.Identifier
+│   │   └── ssd_detection.egg-info
+│   │       ├── dependency_links.txt
+│   │       ├── dependency_links.txt:Zone.Identifier
+│   │       ├── entry_points.txt
+│   │       ├── entry_points.txt:Zone.Identifier
+│   │       ├── PKG-INFO
+│   │       ├── PKG-INFO:Zone.Identifier
+│   │       ├── requires.txt
+│   │       ├── requires.txt:Zone.Identifier
+│   │       ├── SOURCES.txt
+│   │       ├── SOURCES.txt:Zone.Identifier
+│   │       ├── top_level.txt
+│   │       ├── top_level.txt:Zone.Identifier
+│   │       ├── zip-safe
+│   │       └── zip-safe:Zone.Identifier
+│   └── topic_helloworld
+│       ├── build
+│       │   └── lib
+│       │       └── topic_helloworld
+│       │           ├── __init__.py
+│       │           └── __init__.py:Zone.Identifier
+│       ├── colcon_build.rc
+│       ├── colcon_build.rc:Zone.Identifier
+│       ├── colcon_command_prefix_setup_py.sh
+│       ├── colcon_command_prefix_setup_py.sh.env
+│       ├── colcon_command_prefix_setup_py.sh.env:Zone.Identifier
+│       ├── colcon_command_prefix_setup_py.sh:Zone.Identifier
+│       ├── install.log
+│       ├── install.log:Zone.Identifier
+│       ├── prefix_override
+│       │   ├── __pycache__
+│       │   │   ├── sitecustomize.cpython-38.pyc
+│       │   │   └── sitecustomize.cpython-38.pyc:Zone.Identifier
+│       │   ├── sitecustomize.py
+│       │   └── sitecustomize.py:Zone.Identifier
+│       └── topic_helloworld.egg-info
+│           ├── dependency_links.txt
+│           ├── dependency_links.txt:Zone.Identifier
+│           ├── entry_points.txt
+│           ├── PKG-INFO
+│           ├── PKG-INFO:Zone.Identifier
+│           ├── requires.txt
+│           ├── requires.txt:Zone.Identifier
+│           ├── SOURCES.txt
+│           ├── SOURCES.txt:Zone.Identifier
+│           ├── top_level.txt
+│           ├── top_level.txt:Zone.Identifier
+│           ├── zip-safe
+│           └── zip-safe:Zone.Identifier
+├── install
+│   ├── COLCON_IGNORE
+│   ├── COLCON_IGNORE:Zone.Identifier
+│   ├── local_setup.bash
+│   ├── local_setup.bash:Zone.Identifier
+│   ├── local_setup.ps1
+│   ├── local_setup.ps1:Zone.Identifier
+│   ├── local_setup.sh
+│   ├── local_setup.sh:Zone.Identifier
+│   ├── _local_setup_util_ps1.py
+│   ├── _local_setup_util_ps1.py:Zone.Identifier
+│   ├── _local_setup_util_sh.py
+│   ├── _local_setup_util_sh.py:Zone.Identifier
+│   ├── local_setup.zsh
+│   ├── local_setup.zsh:Zone.Identifier
+│   ├── setup.bash
+│   ├── setup.bash:Zone.Identifier
+│   ├── setup.ps1
+│   ├── setup.ps1:Zone.Identifier
+│   ├── setup.sh
+│   ├── setup.sh:Zone.Identifier
+│   ├── setup.zsh
+│   ├── setup.zsh:Zone.Identifier
+│   ├── ssd_detection
+│   │   ├── lib
+│   │   │   ├── python3.8
+│   │   │   │   └── site-packages
+│   │   │   │       ├── ssd_detection
+│   │   │   │       │   ├── gui_display_node.py
+│   │   │   │       │   ├── __init__.py
+│   │   │   │       │   ├── __init__.py:Zone.Identifier
+│   │   │   │       │   ├── misc.py
+│   │   │   │       │   ├── misc.py:Zone.Identifier
+│   │   │   │       │   ├── __pycache__
+│   │   │   │       │   │   ├── gui_display_node.cpython-38.pyc
+│   │   │   │       │   │   ├── __init__.cpython-38.pyc
+│   │   │   │       │   │   ├── __init__.cpython-38.pyc:Zone.Identifier
+│   │   │   │       │   │   ├── misc.cpython-38.pyc
+│   │   │   │       │   │   ├── misc.cpython-38.pyc:Zone.Identifier
+│   │   │   │       │   │   ├── ssd_detection.cpython-38.pyc
+│   │   │   │       │   │   ├── ssd_detection.cpython-38.pyc:Zone.Identifier
+│   │   │   │       │   │   ├── video_publisher.cpython-38.pyc
+│   │   │   │       │   │   └── video_publisher.cpython-38.pyc:Zone.Identifier
+│   │   │   │       │   ├── ssd_detection.py
+│   │   │   │       │   ├── ssd_detection.py:Zone.Identifier
+│   │   │   │       │   ├── video_publisher.py
+│   │   │   │       │   └── video_publisher.py:Zone.Identifier
+│   │   │   │       └── ssd_detection-0.0.0-py3.8.egg-info
+│   │   │   │           ├── dependency_links.txt
+│   │   │   │           ├── dependency_links.txt:Zone.Identifier
+│   │   │   │           ├── entry_points.txt
+│   │   │   │           ├── entry_points.txt:Zone.Identifier
+│   │   │   │           ├── PKG-INFO
+│   │   │   │           ├── PKG-INFO:Zone.Identifier
+│   │   │   │           ├── requires.txt
+│   │   │   │           ├── requires.txt:Zone.Identifier
+│   │   │   │           ├── SOURCES.txt
+│   │   │   │           ├── SOURCES.txt:Zone.Identifier
+│   │   │   │           ├── top_level.txt
+│   │   │   │           ├── top_level.txt:Zone.Identifier
+│   │   │   │           ├── zip-safe
+│   │   │   │           └── zip-safe:Zone.Identifier
+│   │   │   └── ssd_detection
+│   │   │       ├── detection_example
+│   │   │       ├── detection_example:Zone.Identifier
+│   │   │       ├── detection_system
+│   │   │       ├── detection_system:Zone.Identifier
+│   │   │       ├── gui_display
+│   │   │       ├── video_publisher
+│   │   │       └── video_publisher:Zone.Identifier
+│   │   └── share
+│   │       ├── ament_index
+│   │       │   └── resource_index
+│   │       │       └── packages
+│   │       │           ├── ssd_detection
+│   │       │           └── ssd_detection:Zone.Identifier
+│   │       ├── colcon-core
+│   │       │   └── packages
+│   │       │       ├── ssd_detection
+│   │       │       └── ssd_detection:Zone.Identifier
+│   │       └── ssd_detection
+│   │           ├── hook
+│   │           │   ├── ament_prefix_path.dsv
+│   │           │   ├── ament_prefix_path.dsv:Zone.Identifier
+│   │           │   ├── ament_prefix_path.ps1
+│   │           │   ├── ament_prefix_path.ps1:Zone.Identifier
+│   │           │   ├── ament_prefix_path.sh
+│   │           │   ├── ament_prefix_path.sh:Zone.Identifier
+│   │           │   ├── pythonpath.dsv
+│   │           │   ├── pythonpath.dsv:Zone.Identifier
+│   │           │   ├── pythonpath.ps1
+│   │           │   ├── pythonpath.ps1:Zone.Identifier
+│   │           │   ├── pythonpath.sh
+│   │           │   └── pythonpath.sh:Zone.Identifier
+│   │           ├── package.bash
+│   │           ├── package.bash:Zone.Identifier
+│   │           ├── package.dsv
+│   │           ├── package.dsv:Zone.Identifier
+│   │           ├── package.ps1
+│   │           ├── package.ps1:Zone.Identifier
+│   │           ├── package.sh
+│   │           ├── package.sh:Zone.Identifier
+│   │           ├── package.xml
+│   │           ├── package.xml:Zone.Identifier
+│   │           ├── package.zsh
+│   │           ├── package.zsh:Zone.Identifier
+│   │           ├── __pycache__
+│   │           │   └── ssd_detection_launch.cpython-38.pyc
+│   │           └── ssd_detection_launch.py
+│   └── topic_helloworld
+│       ├── lib
+│       │   └── python3.8
+│       │       └── site-packages
+│       │           ├── topic_helloworld
+│       │           │   ├── __init__.py
+│       │           │   ├── __init__.py:Zone.Identifier
+│       │           │   └── __pycache__
+│       │           │       ├── __init__.cpython-38.pyc
+│       │           │       └── __init__.cpython-38.pyc:Zone.Identifier
+│       │           └── topic_helloworld-0.0.0-py3.8.egg-info
+│       │               ├── dependency_links.txt
+│       │               ├── dependency_links.txt:Zone.Identifier
+│       │               ├── entry_points.txt
+│       │               ├── PKG-INFO
+│       │               ├── PKG-INFO:Zone.Identifier
+│       │               ├── requires.txt
+│       │               ├── requires.txt:Zone.Identifier
+│       │               ├── SOURCES.txt
+│       │               ├── SOURCES.txt:Zone.Identifier
+│       │               ├── top_level.txt
+│       │               ├── top_level.txt:Zone.Identifier
+│       │               ├── zip-safe
+│       │               └── zip-safe:Zone.Identifier
+│       └── share
+│           ├── ament_index
+│           │   └── resource_index
+│           │       └── packages
+│           │           ├── topic_helloworld
+│           │           └── topic_helloworld:Zone.Identifier
+│           ├── colcon-core
+│           │   └── packages
+│           │       ├── topic_helloworld
+│           │       └── topic_helloworld:Zone.Identifier
+│           └── topic_helloworld
+│               ├── hook
+│               │   ├── ament_prefix_path.dsv
+│               │   ├── ament_prefix_path.dsv:Zone.Identifier
+│               │   ├── ament_prefix_path.ps1
+│               │   ├── ament_prefix_path.ps1:Zone.Identifier
+│               │   ├── ament_prefix_path.sh
+│               │   ├── ament_prefix_path.sh:Zone.Identifier
+│               │   ├── pythonpath.dsv
+│               │   ├── pythonpath.dsv:Zone.Identifier
+│               │   ├── pythonpath.ps1
+│               │   ├── pythonpath.ps1:Zone.Identifier
+│               │   ├── pythonpath.sh
+│               │   └── pythonpath.sh:Zone.Identifier
+│               ├── package.bash
+│               ├── package.bash:Zone.Identifier
+│               ├── package.dsv
+│               ├── package.dsv:Zone.Identifier
+│               ├── package.ps1
+│               ├── package.ps1:Zone.Identifier
+│               ├── package.sh
+│               ├── package.sh:Zone.Identifier
+│               ├── package.xml
+│               ├── package.xml:Zone.Identifier
+│               ├── package.zsh
+│               └── package.zsh:Zone.Identifier
+├── log
+│   ├── build_2024-06-06_12-52-41
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_12-55-11
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-03-42
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-08-49
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-17-25
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-23-35
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-23-39
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-33-01
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-37-16
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-39-26
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-43-44
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-45-35
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_13-46-50
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_14-37-18
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_14-38-21
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_14-47-25
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_14-59-46
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_15-02-37
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_15-02-42
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_15-20-19
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-06_15-26-22
+│   │   ├── events.log
+│   │   ├── events.log:Zone.Identifier
+│   │   ├── logger_all.log
+│   │   ├── logger_all.log:Zone.Identifier
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── command.log:Zone.Identifier
+│   │   │   ├── stderr.log
+│   │   │   ├── stderr.log:Zone.Identifier
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout.log:Zone.Identifier
+│   │   │   ├── stdout_stderr.log
+│   │   │   ├── stdout_stderr.log:Zone.Identifier
+│   │   │   ├── streams.log
+│   │   │   └── streams.log:Zone.Identifier
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── command.log:Zone.Identifier
+│   │       ├── stderr.log
+│   │       ├── stderr.log:Zone.Identifier
+│   │       ├── stdout.log
+│   │       ├── stdout.log:Zone.Identifier
+│   │       ├── stdout_stderr.log
+│   │       ├── stdout_stderr.log:Zone.Identifier
+│   │       ├── streams.log
+│   │       └── streams.log:Zone.Identifier
+│   ├── build_2024-06-08_23-04-57
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-05-04
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-06-06
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-06-10
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-07-36
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-10-00
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-17-11
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-18-46
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-19-01
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-21-14
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-21-33
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-23-25
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-23-41
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-08_23-28-50
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_20-53-12
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   ├── ssd_detection
+│   │   │   ├── command.log
+│   │   │   ├── stderr.log
+│   │   │   ├── stdout.log
+│   │   │   ├── stdout_stderr.log
+│   │   │   └── streams.log
+│   │   └── topic_helloworld
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-02-53
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-05-31
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-11-34
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-15-21
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-20-21
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-22-26
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-24-41
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_21-25-33
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-20-22
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-25-55
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-26-36
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-27-35
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-29-43
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-32-40
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-34-23
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-37-08
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-42-32
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-48-25
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-09_22-48-54
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_11-48-17
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_12-19-38
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_12-19-45
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_12-22-07
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_12-24-35
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_13-44-15
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_13-45-10
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_13-45-16
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_13-46-15
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_13-46-43
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-07-32
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-07-59
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-23-04
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-26-01
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-28-24
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-30-12
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-32-01
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_14-33-13
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_16-21-40
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_16-27-59
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_16-30-12
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_16-31-46
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-10_16-32-05
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-11_21-28-04
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-11_21-29-24
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-11_21-29-52
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── build_2024-06-15_00-05-52
+│   │   ├── events.log
+│   │   ├── logger_all.log
+│   │   └── ssd_detection
+│   │       ├── command.log
+│   │       ├── stderr.log
+│   │       ├── stdout.log
+│   │       ├── stdout_stderr.log
+│   │       └── streams.log
+│   ├── COLCON_IGNORE
+│   ├── COLCON_IGNORE:Zone.Identifier
+│   ├── latest -> latest_build
+│   └── latest_build -> build_2024-06-15_00-05-52
+└── src
+    ├── Setting.txt
+    └── ssd_detection
+        ├── launch
+        │   └── ssd_detection_launch.py
+        ├── log
+        │   ├── latest -> latest_build
+        │   └── latest_build -> build_2024-06-08_22-33-52
+        ├── package.xml
+        ├── package.xml:Zone.Identifier
+        ├── resource
+        │   ├── ssd_detection
+        │   └── ssd_detection:Zone.Identifier
+        ├── setup.cfg
+        ├── setup.cfg:Zone.Identifier
+        ├── setup.py
+        ├── setup.py:Zone.Identifier
+        ├── SSD_CheckPoint (2) (1).pth:Zone.Identifier
+        ├── SSD_CheckPoint (4).pth:Zone.Identifier
+        ├── SSD_CheckPoint (5).pth:Zone.Identifier
+        ├── SSD_CheckPoint_prev2.pth
+        ├── SSD_CheckPoint_prev.pth
+        ├── SSD_CheckPoint.pth
+        ├── ssd_detection
+        │   ├── gui_display_node.py
+        │   ├── __init__.py
+        │   ├── __init__.py:Zone.Identifier
+        │   ├── misc.py
+        │   ├── misc.py:Zone.Identifier
+        │   ├── __pycache__
+        │   │   ├── __init__.cpython-38.pyc
+        │   │   ├── __init__.cpython-38.pyc:Zone.Identifier
+        │   │   ├── misc.cpython-38.pyc
+        │   │   ├── misc.cpython-38.pyc:Zone.Identifier
+        │   │   ├── ssd_detection.cpython-38.pyc
+        │   │   ├── ssd_detection.cpython-38.pyc:Zone.Identifier
+        │   │   ├── video_publisher.cpython-38.pyc
+        │   │   └── video_publisher.cpython-38.pyc:Zone.Identifier
+        │   ├── ssd_detection.py
+        │   ├── ssd_detection.py:Zone.Identifier
+        │   ├── video_publisher.py
+        │   └── video_publisher.py:Zone.Identifier
+        ├── test
+        │   ├── test_copyright.py
+        │   ├── test_copyright.py:Zone.Identifier
+        │   ├── test_flake8.py
+        │   ├── test_flake8.py:Zone.Identifier
+        │   ├── test_pep257.py
+        │   └── test_pep257.py:Zone.Identifier
+        └── video
+            ├── A.mp4
+            ├── B.mp4
+            ├── C.mp4
+            ├── D.mp4
+            ├── E.mp4
+            └── video.mp4:Zone.Identifier
+
+262 directories, 1241 files

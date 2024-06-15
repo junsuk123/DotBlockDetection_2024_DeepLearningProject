@@ -1,0 +1,58 @@
+[3.246s] Invoking command in '/home/kimjunsuk/ros2_ws/src/ssd_detection': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ssd_detection build --build-base /home/kimjunsuk/ros2_ws/build/ssd_detection/build install --record /home/kimjunsuk/ros2_ws/build/ssd_detection/install.log --install-scripts $base/lib/ssd_detection --single-version-externally-managed
+[3.373s] /usr/local/lib/python3.8/dist-packages/setuptools/dist.py:472: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[3.373s] !!
+[3.373s] 
+[3.373s]         ********************************************************************************
+[3.373s]         Usage of dash-separated 'script-dir' will not be supported in future
+[3.373s]         versions. Please use the underscore name 'script_dir' instead.
+[3.373s] 
+[3.373s]         By 2024-Sep-26, you need to update your project and remove deprecated calls
+[3.373s]         or your builds will no longer be supported.
+[3.373s] 
+[3.373s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[3.373s]         ********************************************************************************
+[3.373s] 
+[3.373s] !!
+[3.374s]   opt = self.warn_dash_deprecation(opt, section)
+[3.481s] running egg_info
+[3.600s] writing ../../build/ssd_detection/ssd_detection.egg-info/PKG-INFO
+[3.600s] writing dependency_links to ../../build/ssd_detection/ssd_detection.egg-info/dependency_links.txt
+[3.600s] writing entry points to ../../build/ssd_detection/ssd_detection.egg-info/entry_points.txt
+[3.601s] writing requirements to ../../build/ssd_detection/ssd_detection.egg-info/requires.txt
+[3.601s] writing top-level names to ../../build/ssd_detection/ssd_detection.egg-info/top_level.txt
+[3.635s] reading manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+[3.636s] writing manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+[3.636s] running build
+[3.636s] running build_py
+[3.637s] copying ssd_detection/video_publisher.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+[3.637s] copying ssd_detection/__init__.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+[3.638s] copying ssd_detection/ssd_detection.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+[3.638s] copying ssd_detection/misc.py -> /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection
+[3.638s] /usr/local/lib/python3.8/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[3.638s] !!
+[3.638s] 
+[3.638s]         ********************************************************************************
+[3.638s]         Please avoid running ``setup.py`` directly.
+[3.638s]         Instead, use pypa/build, pypa/installer or other
+[3.638s]         standards-based tools.
+[3.638s] 
+[3.638s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[3.638s]         ********************************************************************************
+[3.638s] 
+[3.638s] !!
+[3.638s]   self.initialize_options()
+[3.638s] running install
+[3.643s] running install_lib
+[3.659s] copying /home/kimjunsuk/ros2_ws/build/ssd_detection/build/lib/ssd_detection/ssd_detection.py -> /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection
+[3.660s] byte-compiling /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/ssd_detection.py to ssd_detection.cpython-38.pyc
+[3.661s] running install_data
+[3.678s] copying resource/ssd_detection -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ament_index/resource_index/packages
+[3.678s] copying package.xml -> /home/kimjunsuk/ros2_ws/install/ssd_detection/share/ssd_detection
+[3.678s] running install_egg_info
+[3.696s] removing '/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info' (and everything under it)
+[3.696s] Copying ../../build/ssd_detection/ssd_detection.egg-info to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info
+[3.697s] running install_scripts
+[3.746s] Installing detection_example script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+[3.746s] Installing video_publisher script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+[3.746s] writing list of installed files to '/home/kimjunsuk/ros2_ws/build/ssd_detection/install.log'
+[4.166s] Invoked command in '/home/kimjunsuk/ros2_ws/src/ssd_detection' returned '0': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/ssd_detection build --build-base /home/kimjunsuk/ros2_ws/build/ssd_detection/build install --record /home/kimjunsuk/ros2_ws/build/ssd_detection/install.log --install-scripts $base/lib/ssd_detection --single-version-externally-managed
