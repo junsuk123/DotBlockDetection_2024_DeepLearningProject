@@ -27,7 +27,6 @@ setup(
         'console_scripts': [
             'detection_example = ssd_detection.ssd_detection:main',
             'video_publisher = ssd_detection.video_publisher:main',
-            'gui_display = ssd_detection.gui_display_node:main',
         ],
     },
 )

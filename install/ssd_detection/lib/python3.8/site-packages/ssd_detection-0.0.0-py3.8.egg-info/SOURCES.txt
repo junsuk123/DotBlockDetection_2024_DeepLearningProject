@@ -21,7 +21,6 @@ ssd_detection/__init__.py
 ssd_detection/gui_display_node.py
 ssd_detection/misc.py
 ssd_detection/ssd_detection.py
-ssd_detection/video_publisher.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

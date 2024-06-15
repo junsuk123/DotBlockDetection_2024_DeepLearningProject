@@ -1,10 +1,8 @@
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__init__.py
-/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/video_publisher.py
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/misc.py
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/ssd_detection.py
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/gui_display_node.py
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__pycache__/__init__.cpython-38.pyc
-/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__pycache__/video_publisher.cpython-38.pyc
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__pycache__/misc.cpython-38.pyc
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__pycache__/ssd_detection.cpython-38.pyc
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/__pycache__/gui_display_node.cpython-38.pyc
@@ -26,5 +24,4 @@
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info/entry_points.txt:Zone.Identifier
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info/zip-safe:Zone.Identifier
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection/detection_example
-/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection/gui_display
 /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection/video_publisher

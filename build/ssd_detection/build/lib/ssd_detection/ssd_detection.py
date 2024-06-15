@@ -63,10 +63,18 @@ class DetectionNode(Node):
         self.window = QtWidgets.QWidget()
         self.window.setWindowTitle('Detection Info Display')
 
-        self.layout = QtWidgets.QGridLayout()
-        self.image_label = QtWidgets.QLabel()
-        self.layout.addWidget(self.image_label, 0, 0, 1, 4)
+        screen = QtWidgets.QApplication.desktop().screenGeometry()
+        width = int(screen.width() * 0.5)
+        height = int(screen.height() * 0.75)
+        self.window.setGeometry((screen.width() - width) // 2, (screen.height() - height) // 2, width, height)
 
+        self.layout = QtWidgets.QHBoxLayout()
+
+        self.left_layout = QtWidgets.QVBoxLayout()
+        self.image_label = QtWidgets.QLabel()
+        self.left_layout.addWidget(self.image_label)
+
+        self.right_layout = QtWidgets.QGridLayout()
         self.zone_data = {zone: {'dotBlockA_counts': [], 'dotBlockC_counts': [], 'detection_time': '',
                                  'warning_triggered': False, 'current_block': 'A', 'persistent_warning': False}
                           for zone in 'ABCDEFGH'}
@@ -102,11 +110,14 @@ class DetectionNode(Node):
             zone_layout.addLayout(block_indicator_layout)
 
             group_box.setLayout(zone_layout)
-            self.layout.addWidget(group_box, 1 + idx // 4, idx % 4)
+            self.right_layout.addWidget(group_box, idx // 4, idx % 4)
 
             self.displays[zone] = {'dotBlockA_display': dotBlockA_display, 'dotBlockC_display': dotBlockC_display,
                                    'detection_time_display': detection_time_display, 'warning_light': warning_light,
                                    'block_indicator': block_indicator}
+
+        self.layout.addLayout(self.left_layout)
+        self.layout.addLayout(self.right_layout)
 
         self.window.setLayout(self.layout)
         self.window.show()
@@ -190,9 +201,11 @@ class DetectionNode(Node):
             if len(self.zone_data[zone_id]['dotBlockC_counts']) > 10:
                 self.zone_data[zone_id]['dotBlockC_counts'].pop(0)
 
-            self.zone_data[zone_id]['current_block'] = 'C' if dotBlockC_count > 0 else 'A'
+            avg_dotBlockC = np.mean(self.zone_data[zone_id]['dotBlockC_counts'][-5:]) if len(self.zone_data[zone_id]['dotBlockC_counts']) >= 5 else 0
 
-            if dotBlockC_count > 0:
+            self.zone_data[zone_id]['current_block'] = 'C' if avg_dotBlockC >= 1 else 'A'
+
+            if avg_dotBlockC >= 1:
                 self.zone_data[zone_id]['warning_triggered'] = True
                 self.zone_data[zone_id]['persistent_warning'] = True
             else:

@@ -16,10 +16,5 @@ def generate_launch_description():
             name='video_publisher_node',
             output='screen',
         ),
-        Node(
-            package='ssd_detection',
-            executable='gui_display',
-            name='gui_display_node',
-            output='screen',
-        ),
+       
     ])
