@@ -49,6 +49,7 @@ class DetectionNode(Node):
         self.ckpt_path = "src/ssd_detection/SSD_CheckPoint.pth"
         self.ckpt = torch.load(self.ckpt_path, map_location=self.device)
         self.net = self.ckpt['model'].to(self.device)
+        self.net.score_thresh=0.6
         self.net.eval()
 
         self.preproc = self.ptr_weights.transforms()
