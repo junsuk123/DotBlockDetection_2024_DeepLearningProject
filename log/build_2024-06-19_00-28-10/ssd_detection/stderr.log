@@ -1,0 +1,5 @@
+  File "/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection/ssd_detection.py", line 70
+    self.window.setGeometry(-100, -100, width//4, height//)
+                                                          ^
+SyntaxError: invalid syntax
+

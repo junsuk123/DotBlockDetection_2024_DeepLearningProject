@@ -49,7 +49,7 @@ class DetectionNode(Node):
         self.ckpt_path = "src/ssd_detection/SSD_CheckPoint.pth"
         self.ckpt = torch.load(self.ckpt_path, map_location=self.device)
         self.net = self.ckpt['model'].to(self.device)
-        self.net.score_thresh=0.6
+        self.net.score_thresh=0.5
         self.net.eval()
 
         self.preproc = self.ptr_weights.transforms()
@@ -67,7 +67,6 @@ class DetectionNode(Node):
         screen = QtWidgets.QApplication.desktop().screenGeometry()
         width = int(screen.width() * 0.5)
         height = int(screen.height() * 0.75)
-        self.window.setGeometry((screen.width() - width) // 2, (screen.height() - height) // 2, width, height)
 
         self.layout = QtWidgets.QHBoxLayout()
 
@@ -121,15 +120,16 @@ class DetectionNode(Node):
         self.layout.addLayout(self.right_layout)
 
         self.window.setLayout(self.layout)
+        self.window.resize(width//40, height//40)
         self.window.show()
 
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.update_ros)
-        self.timer.start(100)
+        self.timer.start(10)
 
         self.gui_timer = QtCore.QTimer()
         self.gui_timer.timeout.connect(self.update_gui)
-        self.gui_timer.start(100)
+        self.gui_timer.start(10)
 
     def _name_callback(self, msg):
         self.zone_id = msg.data
@@ -142,7 +142,10 @@ class DetectionNode(Node):
             self.get_logger().error(f"Error Occured! Fail to convert the image message data to OpenCV: {e}")
             return
 
-        image = to_pil_image(image)
+        # Resize the image to reduce its size
+        resized_image = cv2.resize(image, (640, 480))
+
+        image = to_pil_image(resized_image)
         image = self.preproc(image)
         images = image.unsqueeze(0).to(self.device)
 
@@ -164,25 +167,25 @@ class DetectionNode(Node):
             if self.classes[label] == 'dotBlockA':
                 box_color = (0, 255, 0)
             elif self.classes[label] == 'dotBlockC':
-                box_color = (0, 0, 255)
+                box_color = (255, 0, 0)
             else:
                 box_color = (255, 255, 0)
 
-            cv_image = cv2.rectangle(cv_image,
+            cv_image = cv2.rectangle(resized_image,
                                      (int(bndbox[0]), int(bndbox[1])),
                                      (int(bndbox[2]), int(bndbox[3])),
                                      box_color,
                                      4)
-            cv_image = cv2.putText(cv_image,
+            cv_image = cv2.putText(resized_image,
                                    label_text,
                                    (int(bndbox[0]) + 20, int(bndbox[1]) + 40),
                                    cv2.FONT_HERSHEY_SIMPLEX,
                                    1,
                                    (255, 0, 255), 2)
-        cv_image = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
-        height, width, channel = cv_image.shape
+        #resized_image = cv2.cvtColor(resized_image, cv2.COLOR_RGB2BGR)
+        height, width, channel = resized_image.shape
         bytesPerLine = 3 * width
-        qImg = QtGui.QImage(cv_image.data, width, height, bytesPerLine, QtGui.QImage.Format_RGB888)
+        qImg = QtGui.QImage(resized_image.data, width, height, bytesPerLine, QtGui.QImage.Format_RGB888)
         self.image_label.setPixmap(QtGui.QPixmap.fromImage(qImg))
 
     def listener_callback(self, msg):

@@ -1,0 +1,22 @@
+[0.821s] Invoking command in '/home/kimjunsuk/ros2_ws/src/ssd_detection': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ssd_detection build --build-base /home/kimjunsuk/ros2_ws/build/ssd_detection/build install --record /home/kimjunsuk/ros2_ws/build/ssd_detection/install.log --install-scripts $base/lib/ssd_detection --single-version-externally-managed install_data
+[1.027s] running egg_info
+[1.028s] writing ../../build/ssd_detection/ssd_detection.egg-info/PKG-INFO
+[1.040s] writing dependency_links to ../../build/ssd_detection/ssd_detection.egg-info/dependency_links.txt
+[1.040s] writing entry points to ../../build/ssd_detection/ssd_detection.egg-info/entry_points.txt
+[1.040s] writing requirements to ../../build/ssd_detection/ssd_detection.egg-info/requires.txt
+[1.040s] writing top-level names to ../../build/ssd_detection/ssd_detection.egg-info/top_level.txt
+[1.078s] reading manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+[1.079s] writing manifest file '../../build/ssd_detection/ssd_detection.egg-info/SOURCES.txt'
+[1.079s] running build
+[1.079s] running build_py
+[1.081s] running install
+[1.082s] running install_lib
+[1.083s] running install_data
+[1.085s] running install_egg_info
+[1.086s] removing '/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info' (and everything under it)
+[1.087s] Copying ../../build/ssd_detection/ssd_detection.egg-info to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages/ssd_detection-0.0.0-py3.8.egg-info
+[1.092s] running install_scripts
+[1.102s] Installing detection_example script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+[1.102s] Installing video_publisher script to /home/kimjunsuk/ros2_ws/install/ssd_detection/lib/ssd_detection
+[1.103s] writing list of installed files to '/home/kimjunsuk/ros2_ws/build/ssd_detection/install.log'
+[1.116s] Invoked command in '/home/kimjunsuk/ros2_ws/src/ssd_detection' returned '0': PYTHONPATH=/home/kimjunsuk/ros2_ws/build/ssd_detection/prefix_override:/home/kimjunsuk/ros2_ws/install/ssd_detection/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/ssd_detection build --build-base /home/kimjunsuk/ros2_ws/build/ssd_detection/build install --record /home/kimjunsuk/ros2_ws/build/ssd_detection/install.log --install-scripts $base/lib/ssd_detection --single-version-externally-managed install_data
